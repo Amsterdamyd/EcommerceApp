@@ -26,16 +26,35 @@ If a product with the same ID already exists, the response code is 400.  Otherwi
 2. PUT request to /products/{id}:
 Updates the product with the given ID. The product JSON sent in the request body will have the keys retailPrice, discountedPrice, availability.
 If the product with the requested ID does not exist, the response code is 400.  Otherwise the response code is 200.
+<p align="center">
+  <a target="_blank" rel="noopener noreferrer" href="https://github.com/Amsterdamyd/EcommerceApp/blob/main/pictures/update%20a%20product.jpg"><img src="https://github.com/Amsterdamyd/EcommerceApp/blob/main/pictures/update%20a%20product.jpg" style="max-width: 100%;"></a>
+  <br>
+</p>
+
 
 3. GET request to /products/{id}:
 Returns a record with the given ID and status code 200.
 If there is no record in the database with the given ID, the response code is 404.
+<p align="center">
+  <a target="_blank" rel="noopener noreferrer" href="https://github.com/Amsterdamyd/EcommerceApp/blob/main/pictures/get%20a%20produc%20by%20id.jpg"><img src="https://github.com/Amsterdamyd/EcommerceApp/blob/main/pictures/get%20a%20produc%20by%20id.jpg" style="max-width: 100%;"></a>
+  <br>
+</p>
+
 
 4. GET requests to /products?category={category}:
 Returns all the products in the given category.
 The response code should be 200.
 Records should be sorted by the availability, i.e., in stock products must be listed before out of stock products. Products with same availability status must be sorted by the discounted price in ascending order. Finally, the products with same discounted price must be sorted by ID in descending order.
+<p align="center">
+  <a target="_blank" rel="noopener noreferrer" href="https://github.com/Amsterdamyd/EcommerceApp/blob/main/pictures/get%20products%20by%20category.jpg"><img src="https://github.com/Amsterdamyd/EcommerceApp/blob/main/pictures/get%20products%20by%20category.jpg" style="max-width: 100%;"></a>
+  <br>
+</p>
+
 
 5. GET request to /products:
 Returns all the records with status code 200.
 Records should be sorted by ID in ascending order.
+<p align="center">
+  <a target="_blank" rel="noopener noreferrer" href="https://github.com/Amsterdamyd/EcommerceApp/blob/main/pictures/get%20all%20products.jpg"><img src="https://github.com/Amsterdamyd/EcommerceApp/blob/main/pictures/get%20all%20products.jpg" style="max-width: 100%;"></a>
+  <br>
+</p>
