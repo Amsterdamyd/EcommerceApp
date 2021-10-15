@@ -17,6 +17,11 @@ Example of a product JSON object:
 Creates a new product.
 Expects a JSON product object with a unique ID. You can assume that the given object is always valid.
 If a product with the same ID already exists, the response code is 400.  Otherwise the response code is 201.
+<p align="center">
+  <a target="_blank" rel="noopener noreferrer" href="https://github.com/Amsterdamyd/EcommerceApp/blob/main/pictures/create%20a%20product.jpg"><img src="https://github.com/Amsterdamyd/EcommerceApp/blob/main/pictures/create%20a%20product.jpg" style="max-width: 100%;"></a>
+  <br>
+</p>
+
 
 2. PUT request to /products/{id}:
 Updates the product with the given ID. The product JSON sent in the request body will have the keys retailPrice, discountedPrice, availability.
